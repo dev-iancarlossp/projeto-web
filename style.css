@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-bg: #7C444F;
+    --cor-secundaria: #9F5255;
+    --cor-destaque: #F39E60;
+    --cor-terciaria: white;
+
+    --fonte-primaria: 'Momo Trust Display', sans-serif;
+    --fonte-secundaria: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--cor-bg);
+    
+}
+
+.cabecalho {
+    background-color: var(--cor-secundaria);
+    padding: 2% 10%;
+    display: flex;
+}
+
+.cabecalho__menu {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    transition: transform 0.3s ease;
+}
+
+.cabecalho__menu__link:hover {
+    transform: scale(1.1);
+    color: var(--cor-destaque)
+}
+
+.apresentacao {
+    padding: 5% 10%;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    gap: 30px;
+}
+
+.apresentacao__titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    color: var(--cor-terciaria);
+    font-size: 50px;
+}
+
+.apresentacao__destaque {
+    color: var(--cor-destaque);
+}
+
+.apresentacao__texto {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 23px;
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__texto {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-bg);
+    padding: 1%;
+}
